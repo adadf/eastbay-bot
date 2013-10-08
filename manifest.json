@@ -1,0 +1,38 @@
+{
+  "name": "Eastbay Bot",
+  "manifest_version": 2,
+  "version": "2.0",
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "description": "A bot that attempts to get your shoe on Eastbay, Footlocker, Footaction, and Champ's Sports.",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.eastbay.com/product/*",
+        "*://*.footlocker.com/product/*",
+        "*://*.footaction.com/product/*",
+        "*://*.champssports.com/product/*"
+        ],
+      "js": ["addtocart.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "icon19.png",
+      "38": "icon38.png"
+    },
+    "default_title": "Eastbay Bot"
+  },
+  "options_page": "popup.html",
+  "permissions": [
+        "tabs",
+        "storage",
+        "*://*.eastbay.com/product/*",
+        "*://*.footlocker.com/product/*",
+        "*://*.footaction.com/product/*",
+        "*://*.champssports.com/product/*"
+  ]
+}
