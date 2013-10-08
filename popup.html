@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+  <title>Eastbay Bot</title>
+  <style type="text/css">
+    body {
+      background-color: #b5b5b5;
+      font-family:"Helvetica", sans-serif;
+      font-size: 12px;
+    }
+    a {
+      color: #000;
+      text-decoration:none;
+    }
+    a:visited {
+      color: #000;
+      text-decoration:none;
+    }
+    #menu {
+      width: 300px;
+      background-color: #b5b5b5;
+      margin-top: -5px;
+    }
+    #header {
+      color: #7b7b7b;
+      width: 200px;
+      font-size: 9px;
+      margin-top: -10px;
+      padding-bottom: 5px;
+      padding-right: 135px;
+      border-bottom: 1px solid #9f9f9f;
+      margin-left: -8px;
+      white-space: nowrap;
+    }
+    #options {
+      list-style: none;
+      width: 100%;
+    }
+    #options li {
+      margin-left: -47px;
+      padding: 5px 50px 5px 3px;
+      text-align: left;
+    }
+    .helptext {
+      font-size: 9px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="menu">
+      <span id="header">&nbsp;&nbsp;&nbsp;Eastbay Bot Version 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <ul id="options">
+        <li class="option" id="size-li">Set Your Size: 
+          <input id="size" type"text" value=""><button id="save">Save</button><br />
+          <span class="helptext">(Size must be in 3 digit format. Examples: 08.0, 10.5, 12.0)<br />
+        </li>
+      </ul>
+    </div><!--#menu-->
+  </div><!--#wrap-->
+  <script src="popup.js"></script>
+</body>
